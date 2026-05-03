@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Готические сказки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Аудио -->
+  <audio id="bgMusic" loop preload="auto" src="audio/bg-music.mp3"></audio>
+  <audio id="hoverSound" preload="auto" src="audio/hover-click.mp3"></audio>
+
+  <!-- Галерея -->
+  <div id="galleryContainer" class="gallery-container">
+    <div class="gallery-header">
+      <h1>Тёмные сказки</h1>
+      <p>Пять историй, от которых стынет кровь</p>
+      <button id="musicToggleBtn" class="music-btn" aria-label="Включить музыку">🎵</button>
+    </div>
+    <div class="covers-grid" id="coversGrid"></div>
+    <footer class="gallery-footer">
+      <span>© Страшные предания</span>
+    </footer>
+  </div>
+
+  <!-- Страница чтения -->
+  <div id="storyContainer" class="story-container hidden">
+    <div class="reading-controls">
+      <button id="themeToggleBtn" class="reading-btn" aria-label="Сменить тему">🌙</button>
+      <button id="fontToggleBtn" class="reading-btn" aria-label="Сменить шрифт">🔤</button>
+    </div>
+    <button id="backBtn" class="back-btn">← Назад к сказкам</button>
+    <div id="storyContent" class="story-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
